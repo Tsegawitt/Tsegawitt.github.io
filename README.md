@@ -21,7 +21,7 @@ To view this website locally:
 4. Open your browser and navigate to: `http://localhost/<project-folder-name>/`
 
 ### Screenshot of Local Hosting
-
+![Local Hosting Screenshot](screenshots.PNG)
 
 ## AI Assistant Chat
 [Link to AI Assistant chat used for this project]
