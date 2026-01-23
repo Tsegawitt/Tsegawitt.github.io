@@ -1,0 +1,94 @@
+body {
+    font-family: Arial, Helvetica, sans-serif; /* readable web-safe font */
+    background: linear-gradient(to right, #f0f4f8, #d9e2ec); /* gradient background */
+    margin: 0;
+    padding: 0;
+}
+
+/* Header Styles */
+header {
+    text-align: center;
+    font-size: 2.5em;
+    font-weight: bold;
+    padding: 20px;
+    background-color: #4a90e2;
+    color: white;
+}
+
+/* Navigation Menu Styles */
+nav ul {
+    list-style-type: none; /* remove bullets */
+    display: flex; /* horizontal layout */
+    justify-content: center;
+    padding: 0;
+    margin: 10px 0;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    padding: 5px 10px;
+    transition: background-color 0.3s ease, color 0.3s ease; /* hover transition */
+}
+
+nav ul li a:hover {
+    background-color: #357ABD;
+    border-radius: 5px;
+}
+
+/* Main Section Styles */
+main section {
+    padding: 20px;
+    margin: 20px auto;
+    background-color: white;
+    box-shadow: 0px 2px 8px rgba(0,0,0,0.1);
+    border-radius: 10px;
+    max-width: 800px;
+    transition: transform 0.3s ease; /* zoom effect on hover */
+}
+
+main section:hover {
+    transform: scale(1.02); /* slightly enlarge on hover */
+}
+
+/* Table Styling */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    box-shadow: 0px 2px 8px rgba(0,0,0,0.1);
+}
+
+table th, table td {
+    border: 1px solid #ccc;
+    padding: 10px;
+    text-align: left;
+}
+
+table th {
+    background-color: #4a90e2;
+    color: white;
+}
+
+table img {
+    width: 100px;
+    height: auto;
+}
+
+table tbody tr:hover {
+    background-color: #f0f8ff; /* row hover effect */
+}
+
+/* Footer Styles */
+footer {
+    font-size: 0.9em;
+    text-align: center;
+    padding: 15px;
+    background-color: #333;
+    color: white;
+}
