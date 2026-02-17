@@ -1,5 +1,107 @@
-<html>
+<!doctype html>
+<!--
+  Undergraduate portfolio homepage
+  - Clean, beginner-friendly HTML & CSS
+  - Sections: header, summary, projects, skills, contact/resume link
+  Placeholders are marked where you can add real projects and skill items.
+-->
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Tsegawitt — Software Development Student</title>
+    <!-- Simple CSS kept in the page for beginners; move to separate file if preferred -->
+    <style>
+      /* Page layout and typography */
+      :root{ --accent:#2563eb; --bg:#f7f9fc; --card:#ffffff; --muted:#6b7280; }
+      html,body{ height:100%; margin:0; font-family:Inter, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial; background:var(--bg); color:#111827; }
+      .container{ max-width:900px; margin:36px auto; padding:24px; }
+      header{ display:flex; justify-content:space-between; align-items:center; gap:16px; }
+      h1{ margin:0; font-size:1.8rem; }
+      .degree{ color:var(--muted); margin-top:6px; font-weight:500; }
+      .actions a{ background:var(--accent); color:white; padding:10px 14px; border-radius:8px; text-decoration:none; font-weight:600; }
+
+      /* Card style sections */
+      section.card{ background:var(--card); border-radius:12px; padding:18px; box-shadow:0 4px 10px rgba(15,23,42,0.06); margin-top:20px; }
+      .summary p{ margin:0 0 10px 0; line-height:1.5; }
+      .grid{ display:grid; grid-template-columns:repeat(auto-fit, minmax(220px,1fr)); gap:12px; }
+      .project{ border-left:4px solid var(--accent); padding:10px; border-radius:6px; background:linear-gradient(180deg, rgba(37,99,235,0.03), transparent); }
+      ul.skills{ list-style:none; padding:0; margin:0; display:flex; gap:8px; flex-wrap:wrap; }
+      ul.skills li{ background:#eef2ff; color:#1e3a8a; padding:6px 10px; border-radius:999px; font-size:0.9rem; }
+
+      footer{ margin-top:26px; text-align:center; color:var(--muted); font-size:0.9rem; }
+
+      /* Small screens adjustments */
+      @media (max-width:520px){ h1{ font-size:1.4rem } .container{ padding:16px } }
+    </style>
+  </head>
   <body>
-    <h3>Test Commit</h3>
+    <main class="container">
+      <!-- Header: name, degree, and resume link -->
+      <header>
+        <div>
+          <h1>Tsegawitt</h1>
+          <div class="degree">Undergraduate — Software Development</div>
+        </div>
+
+        <!-- Link to the resume PDF in the assets folder -->
+        <div class="actions">
+          <a href="assets/resume.pdf" target="_blank" rel="noopener">View Résumé</a>
+        </div>
+      </header>
+
+      <!-- Professional summary: concise and suitable for an undergraduate portfolio -->
+      <section class="card summary" aria-labelledby="summary-heading">
+        <h2 id="summary-heading">Professional Summary</h2>
+        <p>
+          Motivated Software Development undergraduate with coursework and hands-on experience in building web applications, data structures, and collaborative team projects. Passionate about learning modern development tools, writing clean code, and solving real-world problems through software.
+        </p>
+        <p>
+          Seeking internship or entry-level opportunities to apply skills in frontend and backend development, participate in agile teams, and contribute to impactful projects while continuing to grow as a developer.
+        </p>
+      </section>
+
+      <!-- Projects section: placeholders for now. Replace with actual projects later. -->
+      <section class="card" aria-labelledby="projects-heading">
+        <h2 id="projects-heading">Projects</h2>
+        <p class="muted">Below are placeholder entries — replace them with your project titles, short descriptions, and links.</p>
+        <div class="grid" style="margin-top:12px;">
+          <article class="project">
+            <strong>Project Title 1</strong>
+            <div class="muted" style="color:var(--muted); margin-top:6px;">Short description: what it does and tech used (e.g., React, Node.js).</div>
+          </article>
+
+          <article class="project">
+            <strong>Project Title 2</strong>
+            <div class="muted" style="color:var(--muted); margin-top:6px;">Short description: your role, features implemented, and repo link.</div>
+          </article>
+
+          <!-- Add more project cards as you complete projects -->
+        </div>
+      </section>
+
+      <!-- Skills section: simple badges for quick scan -->
+      <section class="card" aria-labelledby="skills-heading">
+        <h2 id="skills-heading">Skills</h2>
+        <p class="muted">Replace these with the technologies and tools you use.</p>
+        <ul class="skills" style="margin-top:12px;">
+          <li>HTML</li>
+          <li>CSS</li>
+          <li>JavaScript</li>
+          <li>Git</li>
+          <li>Node.js</li>
+        </ul>
+      </section>
+
+      <!-- Contact / next steps -->
+      <section class="card" aria-labelledby="contact-heading">
+        <h2 id="contact-heading">Contact</h2>
+        <p>If you'd like to see more or collaborate, add your contact email or a link to your GitHub profile here.</p>
+      </section>
+
+      <footer>
+        <div>Built for GitHub Pages • Host this repository's `main` branch as a site</div>
+      </footer>
+    </main>
   </body>
 </html>
